@@ -75,7 +75,9 @@
         wget https://github.com/caddyserver/caddy/releases/download/v2.6.2/caddy_2.6.2_linux_amd64.tar.gz 
 
 2. Type *ls* in terminal to check if it has been installed.
-//step3_caddy.JPG 
+
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/step3_caddy.jpg)
+
 
 3. Extract the file:
 
@@ -105,13 +107,17 @@ step4_index.html
         npm init
         npm install fastify 
 Create index.js file 
-step4_index.js.JPG
+
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/index.js.jpg)
+
 6. Move both your html and src directory to both of your servers via sftp
-picture
+
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/step4_sftp.jpg)
 
 ### Step 5
 1. Create a Caddyfile on local machine via wsl
-picture
+
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/Caddyfile.jpg)
 
 ### Step 6 
 1. Install node and npm with Volta on both servers by running:
@@ -122,13 +128,33 @@ picture
 
 ### Step 7
 1. Create service file to start node application 
-step7_servicefile.JPG
+
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/hello_web.jpg)
 
 ### Step 8
 1. Move Caddyfile and service file to both servers via sftp
-step8_sftp.JPG 
+
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/step8_sftp.jpg)
+
+
+2. Move files in appropriate location. 
+- Caddyfile -> /etc/caddy 
+- caddy.service & hello_web.service -> /etc/systemd/system
+- index.html -> /var/www
+
+3. Enable,start services:
+
+        sudo systemctl daemon-reload
+        sudo system enable hello_web.service 
+        sudo systemctl start hello_web.service 
+*Do the same for caddy.service 
+
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/hello_web.service_working.jpg)
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/caddy.service_working.jpg)
 
 ### Step 9
-1. Move files in appropriate location. 
 
-load balencer ip address: 24.199.71.54
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/working1.jpg)
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/working2.jpg)
+
+load balancer ip address: http://24.199.71.54/

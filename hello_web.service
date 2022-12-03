@@ -1,0 +1,16 @@
+[Unit]
+Description=Starts node application
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/home/user1/.volta/bin/node /home/user1/src/index.js
+User=user1
+Group=user1
+Restart=always
+RestartSec=10
+TimeoutStopSec=90
+SyslogIdentifier=hello_web
+
+[Install]
+WantedBy=multi-user.target

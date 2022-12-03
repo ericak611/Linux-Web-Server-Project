@@ -108,7 +108,7 @@ step4_index.html
         npm install fastify 
 Create index.js file 
 
-![Image text](https://github.com/ericak611/2420_assign2/blob/main/Images/index.js.jpg?raw=true)
+![Image text](https://github.com/ericak611/2420_assign2/blob/main/Images/index.js.jpg?raw=true) 
 
 6. Move both your html and src directory to both of your servers via sftp
 
@@ -129,7 +129,7 @@ Create index.js file
 ### Step 7
 1. Create service file to start node application 
 
-![Image text](https://github.com/ericak611/2420_assign2/blob/main/Images/hello_web.jpg?raw=true)
+![Image text](https://github.com/ericak611/2420_assign2/blob/main/Images/hello_web.service.jpg?raw=true)
 
 ### Step 8
 1. Move Caddyfile and service file to both servers via sftp
@@ -158,5 +158,7 @@ Create index.js file
 ![Image text](https://github.com/ericak611/2420_assign2/blob/main/Images/working1.jpg?raw=true)
 
 ![Image text](https://github.com/ericak611/2420_assign2/blob/main/Images/working2.jpg?raw=true)
+
+![Image text](https://github.com/ericak611/2420_assign2/blob/main/Images/api2working.jpg?raw=true)
 
 load balancer ip address: http://24.199.71.54/

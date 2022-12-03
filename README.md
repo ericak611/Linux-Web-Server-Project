@@ -76,7 +76,7 @@
 
 2. Type *ls* in terminal to check if it has been installed.
 
-![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/step3_caddy.jpg)
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/step3_caddy.jpg?raw=true)
 
 
 3. Extract the file:
@@ -108,16 +108,16 @@ step4_index.html
         npm install fastify 
 Create index.js file 
 
-![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/index.js.jpg)
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/index.js.jpg?raw=true)
 
 6. Move both your html and src directory to both of your servers via sftp
 
-![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/step4_sftp.jpg)
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/step4_sftp.jpg?raw=true)
 
 ### Step 5
 1. Create a Caddyfile on local machine via wsl
 
-![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/Caddyfile.jpg)
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/Caddyfile.jpg?raw=true)
 
 ### Step 6 
 1. Install node and npm with Volta on both servers by running:
@@ -129,12 +129,12 @@ Create index.js file
 ### Step 7
 1. Create service file to start node application 
 
-![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/hello_web.jpg)
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/hello_web.jpg?raw=true)
 
 ### Step 8
 1. Move Caddyfile and service file to both servers via sftp
 
-![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/step8_sftp.jpg)
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/step8_sftp.jpg?raw=true)
 
 
 2. Move files in appropriate location. 
@@ -149,12 +149,12 @@ Create index.js file
         sudo systemctl start hello_web.service 
 *Do the same for caddy.service 
 
-![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/hello_web.service_working.jpg)
-![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/caddy.service_working.jpg)
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/hello_web.service_working.jpg?raw=true)
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/caddy.service_working.jpg?raw=true)
 
 ### Step 9
 
-![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/working1.jpg)
-![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/working2.jpg)
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/working1.jpg?raw=true)
+![Script](https://github.com/ericak611/2420_assign2/tree/main/Images/working2.jpg?raw=true)
 
 load balancer ip address: http://24.199.71.54/

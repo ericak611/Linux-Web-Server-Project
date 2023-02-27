@@ -1,5 +1,4 @@
-# Assignment 2
-#### Hyewon (Erica) Kim
+# Linux Web Server Project
 
 ## Step 1 - Creating Infastructure 
 ### Create VPC 
